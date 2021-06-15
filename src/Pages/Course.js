@@ -2,6 +2,7 @@ import { Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import CourseCard from '../Components/CourseCard'
 import Heading from '../Components/Heading'
+import PuzzleCard from '../Components/PuzzleCard'
 
 const useStyles = makeStyles(theme =>({
       root:{
@@ -32,7 +33,7 @@ export default function Course() {
             <div className={classes.container}>
                         <Grid container direction='row' justify='center' spacing={5}>
                         <Grid item md={7} >
-                        <Typography variant='h2' className={`${classes.textMarginBottom} ${classes.textMarginTop}`}>
+                        <Typography variant='h2' className={`${classes.textMarginBottom} ${classes.textMarginTop}`} style={{fontWeight:'bold'}}>
                               Logic
                         </Typography>
                         <Typography variant='h5' component='p' className={classes.textMarginBottom}>
@@ -55,7 +56,7 @@ export default function Course() {
             </section>
             <section className={`${classes.sectionCourse} ${classes.container}`}>
                   <Heading number='1' title='Introduction' subTitle='Put your logic to the test with these warmups!'/>
-                  
+                  <PuzzleCard img='https://ds055uzetaobb.cloudfront.net/brioche/chapter/Warmup_Puzzles-T6zgwD-6TgfYy.png' heading='Warmup Puzzles' subtitle='Get started with some logic warmups.'/>
             </section>
             </>
             

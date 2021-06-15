@@ -13,7 +13,7 @@ export default function Heading(props) {
                            </Grid>
                      <Grid item xs container direction='column'>
                      <Grid item>                             
-                        <Typography variant="h5" color="textPrimary" >{title}</Typography>
+                        <Typography variant="h5" color="textPrimary" style={{fontWeight:'bold'}}>{title}</Typography>
                         </Grid>
                      <Grid item>
                      <Typography variant="h6" color="textSecondary" >{subTitle}</Typography>
